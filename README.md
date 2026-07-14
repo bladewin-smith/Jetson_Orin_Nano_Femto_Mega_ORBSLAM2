@@ -40,30 +40,51 @@ Femto Mega
 ## 2. 目录结构
 
 ```text
-ros2_orbslam2_pointcloud_map/
-├── README.md
-├── scripts/
-│   ├── build_orbslam2_core.sh
-│   └── build_ros2_ws.sh
-├── src/
-│   └── orbslam2_pointcloud_ros2/
-│       ├── CMakeLists.txt
-│       ├── package.xml
-│       ├── config/
-│       │   ├── femto_mega.yaml
-│       │   └── femto_mega_aligned.yaml
-│       ├── launch/
-│       │   ├── orbbec_aligned_rgbd_publisher.launch.py
-│       │   ├── rgbd_femto_mega.launch.py
-│       │   └── femto_mega_camera_and_slam.launch.py
-│       ├── scripts/
-│       │   └── orbbec_aligned_rgbd_publisher.py
-│       └── src/
-│           └── rgbd_node.cpp
-└── docs/
-    ├── ORBBEC_ALIGNED_RGBD_PUBLISHER.md
-    ├── MIGRATION_NOTES.md
-    └── JETSON_ORIN_NANO_UBUNTU22_ROS2_REPRODUCE.md
+/home/jetson/ws/orb-slam2/code
+├── main/
+│   └── ORBSLAM2_with_pointcloudmap_AstraPro-main/
+│       └── ORBSLAM2_with_pointcloud_map/
+│           ├── bin/
+│           ├── build.sh
+│           ├── CameraTrajectory.txt
+│           ├── cmake_modules/
+│           ├── Dependencies.md
+│           ├── Examples/
+│           ├── include/
+│           ├── KeyFrameTrajectory.txt
+│           ├── lib/
+│           ├── LICENSE.txt
+│           ├── License-gpl.txt
+│           ├── ORBvoc.txt.tar.gz
+│           ├── pic/
+│           ├── README.md
+│           ├── script/
+│           ├── src/
+│           ├── Thirdparty/
+│           └── Vocabulary/
+│
+└── ros2_orbslam2_pointcloud_map/
+    ├── docs/
+    ├── Log/
+    ├── README.md
+    ├── scripts/
+    │   ├── build_orbslam2_core.sh
+    │   ├── build_ros2_ws.sh
+    │   └── (其他脚本文件)
+    └── src/
+        └── orbslam2_pointcloud_ros2/
+            ├── CMakeLists.txt
+            ├── package.xml
+            ├── config/
+            │   ├── femto_mega.yaml
+            │   └── femto_mega_aligned.yaml
+            ├── launch/
+            │   ├── orbbec_aligned_rgbd_publisher.launch.py
+            │   └── rgbd_femto_mega.launch.py
+            ├── scripts/
+            │   └── orbbec_aligned_rgbd_publisher.py
+            └── src/
+                └── rgbd_node.cpp
 ```
 
 原 ORB-SLAM2 点云核心库应位于同级 `main` 目录下：
