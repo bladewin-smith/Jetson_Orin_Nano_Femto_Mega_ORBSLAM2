@@ -25,6 +25,7 @@ def generate_launch_description():
         DeclareLaunchArgument("depth_topic", default_value=""),
         DeclareLaunchArgument("output_dir", default_value=default_output_dir),
         DeclareLaunchArgument("enable_viewer", default_value="true"),
+        DeclareLaunchArgument("enable_pcl_viewer", default_value="false"),
         DeclareLaunchArgument("queue_size", default_value="10"),
         DeclareLaunchArgument("sync_slop_seconds", default_value="0.15"),
         Node(
@@ -39,6 +40,7 @@ def generate_launch_description():
                 "depth_topic": LaunchConfiguration("depth_topic"),
                 "output_dir": LaunchConfiguration("output_dir"),
                 "enable_viewer": ParameterValue(LaunchConfiguration("enable_viewer"), value_type=bool),
+                "enable_pcl_viewer": ParameterValue(LaunchConfiguration("enable_pcl_viewer"), value_type=bool),
                 "queue_size": ParameterValue(LaunchConfiguration("queue_size"), value_type=int),
                 "sync_slop_seconds": ParameterValue(LaunchConfiguration("sync_slop_seconds"), value_type=float),
             }],

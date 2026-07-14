@@ -28,6 +28,7 @@ public:
     const std::string vocabulary_path = declare_parameter<std::string>("vocabulary_path", "");
     const std::string settings_path = declare_parameter<std::string>("settings_path", "");
     const bool enable_viewer = declare_parameter<bool>("enable_viewer", true);
+    const bool enable_pcl_viewer = declare_parameter<bool>("enable_pcl_viewer", false);
     queue_size_ = declare_parameter<int>("queue_size", 10);
     sync_slop_seconds_ = declare_parameter<double>("sync_slop_seconds", 0.15);
     output_dir_ = declare_parameter<std::string>("output_dir", ".");
@@ -61,9 +62,15 @@ public:
     RCLCPP_INFO(get_logger(), "Depth topic: %s", depth_topic.c_str());
     RCLCPP_INFO(get_logger(), "Approximate sync slop: %.3f s", sync_slop_seconds_);
 
+    if (!enable_pcl_viewer) {
+      setenv("ORB_SLAM2_DISABLE_PCL_VIEWER", "1", 1);
+      RCLCPP_INFO(get_logger(), "PCL cloud viewer is disabled.");
+    }
+
     if (!enable_viewer) {
-      setenv("ORB_SLAM2_DISABLE_PCL_VIEWER", "1", 0);
-      RCLCPP_INFO(get_logger(), "ORB-SLAM2 viewer and PCL cloud viewer are disabled.");
+      RCLCPP_INFO(get_logger(), "ORB-SLAM2 viewer is disabled.");
+    } else {
+      RCLCPP_INFO(get_logger(), "ORB-SLAM2 viewer is enabled.");
     }
 
     slam_ = std::make_unique<ORB_SLAM2::System>(

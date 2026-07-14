@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2/rgbd_node" "TARGETS" "rgbd_node" "DESTINATION" "lib/orbslam2_pointcloud_ros2")
