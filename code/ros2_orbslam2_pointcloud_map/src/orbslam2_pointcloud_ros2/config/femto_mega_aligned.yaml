@@ -1,0 +1,49 @@
+%YAML:1.0
+
+# Intrinsics must match the aligned color stream printed by
+# orbbec_aligned_rgbd_publisher.py. The values below are placeholders from the
+# previous Femto Mega runtime log; update them with your own camera_info if needed.
+Camera.fx: 745.445556640625
+Camera.fy: 745.3672485351562
+Camera.cx: 634.3263549804688
+Camera.cy: 351.723388671875
+
+# Aligned depth is already expressed in the color optical frame.
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.width: 1280
+Camera.height: 720
+Camera.fps: 30.0
+
+Camera.bf: 40.0
+Camera.RGB: 1
+ThDepth: 100.0
+
+# pyorbbecsdk depth frames are published here as 16UC1 depth images.
+# Keep 1000.0 when the raw depth unit is millimeter.
+DepthMapFactor: 1000.0
+
+ORBextractor.nFeatures: 2000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 12
+ORBextractor.minThFAST: 5
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+
+PointCloudMapping.Resolution: 0.01
+
+rgb_topic: /orbbec/aligned/color/image_raw
+depth_topic: /orbbec/aligned/depth/image_raw

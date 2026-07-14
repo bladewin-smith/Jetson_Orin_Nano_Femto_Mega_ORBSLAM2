@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-ec9738b9e230c7253061.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "orbslam2_pointcloud_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "orbslam2_pointcloud_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-orbslam2_pointcloud_ros2_uninstall-Release-56dc4b6875d2c79433a1.json",
+					"name" : "orbslam2_pointcloud_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rgbd_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rgbd_node-Release-9567134830ddc1992410.json",
+					"name" : "rgbd_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-4d716ccb830f06e73ee9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2",
+		"source" : "/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,48 @@
+%YAML:1.0
+
+# Replace these values with /camera/color/camera_info from your Femto Mega.
+Camera.fx: 745.445556640625
+Camera.fy: 745.3672485351562
+Camera.cx: 634.3263549804688
+Camera.cy: 351.723388671875
+
+# If the Orbbec ROS 2 driver publishes rectified/aligned color images, keep these at 0.
+Camera.k1: 0.0
+Camera.k2: 0.0
+Camera.p1: 0.0
+Camera.p2: 0.0
+
+Camera.width: 1280
+Camera.height: 720
+Camera.fps: 30.0
+
+# For RGB-D mode this value is only used to derive a far-depth threshold.
+Camera.bf: 40.0
+Camera.RGB: 1
+ThDepth: 40.0
+
+# Use 1000.0 when the depth image encoding is 16UC1 in millimeters.
+# Use 1.0 when the depth image encoding is 32FC1 in meters.
+DepthMapFactor: 1000.0
+
+ORBextractor.nFeatures: 1200
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+
+PointCloudMapping.Resolution: 0.01
+
+rgb_topic: /camera/color/image_raw
+depth_topic: /camera/depth/image_raw

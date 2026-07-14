@@ -1,0 +1,496 @@
+[0.034s] Invoking command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2
+[0.260s] -- The C compiler identification is GNU 11.4.0
+[0.397s] -- The CXX compiler identification is GNU 11.4.0
+[0.426s] -- Detecting C compiler ABI info
+[0.616s] -- Detecting C compiler ABI info - done
+[0.629s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.630s] -- Detecting C compile features
+[0.632s] -- Detecting C compile features - done
+[0.642s] -- Detecting CXX compiler ABI info
+[0.847s] -- Detecting CXX compiler ABI info - done
+[0.860s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.861s] -- Detecting CXX compile features
+[0.862s] -- Detecting CXX compile features - done
+[0.884s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.879s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.077s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.264s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.448s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.473s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.508s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.563s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.627s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.811s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.827s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.105s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.185s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.278s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.318s] -- Looking for pthread.h
+[3.505s] -- Looking for pthread.h - found
+[3.506s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.704s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.707s] -- Found Threads: TRUE  
+[3.907s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.984s] -- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)
+[4.100s] -- Found CUDA: /usr/local/cuda-12.6 (found suitable exact version "12.6") 
+[4.120s] -- Found OpenCV: /usr/local (found version "4.10.0") 
+[4.198s] -- Checking for module 'eigen3'
+[4.232s] --   Found eigen3, version 3.4.0
+[4.305s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[4.305s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.410s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[4.449s] -- Checking for module 'flann'
+[4.483s] --   Found flann, version 1.9.1
+[4.591s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[4.591s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[4.670s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[4.687s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[5.043s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[5.043s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[5.055s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[5.089s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[5.130s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") 
+[5.194s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[5.426s] -- Found X11: /usr/include   
+[5.427s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[5.601s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[5.602s] -- Looking for gethostbyname
+[5.770s] -- Looking for gethostbyname - found
+[5.770s] -- Looking for connect
+[5.923s] -- Looking for connect - found
+[5.924s] -- Looking for remove
+[6.088s] -- Looking for remove - found
+[6.088s] -- Looking for shmat
+[6.258s] -- Looking for shmat - found
+[6.258s] -- Looking for IceConnectionNumber in ICE
+[6.417s] -- Looking for IceConnectionNumber in ICE - found
+[6.606s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") 
+[6.612s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[6.619s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") 
+[6.625s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") 
+[6.658s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[6.674s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  
+[6.681s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[6.694s] -- Found utf8cpp: /usr/include/utf8cpp  
+[6.909s] -- Checking for module 'libusb-1.0'
+[6.949s] --   Found libusb-1.0, version 1.0.25
+[7.046s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[7.048s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[7.049s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.183s] -- Found OpenNI2: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb (found version "2.3.0.85") 
+[7.184s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[7.184s] -- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[7.473s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[7.486s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.501s] -- OpenNI2 found (version: 2.3.0.85, include: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/include/openni2, lib: /home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb)
+[7.795s] -- Found Qhull version 8.0.2
+[8.099s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.381s] -- looking for PCL_COMMON
+[8.383s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[8.383s] -- looking for PCL_KDTREE
+[8.385s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[8.385s] -- looking for PCL_OCTREE
+[8.387s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[8.387s] -- looking for PCL_SEARCH
+[8.388s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[8.389s] -- looking for PCL_SAMPLE_CONSENSUS
+[8.390s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[8.390s] -- looking for PCL_FILTERS
+[8.391s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[8.392s] -- looking for PCL_2D
+[8.392s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[8.393s] -- looking for PCL_GEOMETRY
+[8.393s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[8.393s] -- looking for PCL_IO
+[8.394s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[8.395s] -- looking for PCL_FEATURES
+[8.396s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[8.396s] -- looking for PCL_ML
+[8.398s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[8.398s] -- looking for PCL_SEGMENTATION
+[8.399s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[8.399s] -- looking for PCL_VISUALIZATION
+[8.401s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[8.401s] -- looking for PCL_SURFACE
+[8.402s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[8.403s] -- looking for PCL_REGISTRATION
+[8.404s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[8.404s] -- looking for PCL_KEYPOINTS
+[8.405s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[8.406s] -- looking for PCL_TRACKING
+[8.407s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[8.407s] -- looking for PCL_RECOGNITION
+[8.409s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[8.409s] -- looking for PCL_STEREO
+[8.410s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[8.411s] -- looking for PCL_APPS
+[8.412s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[8.413s] -- looking for PCL_IN_HAND_SCANNER
+[8.413s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[8.413s] -- looking for PCL_MODELER
+[8.414s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[8.414s] -- looking for PCL_POINT_CLOUD_EDITOR
+[8.415s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[8.415s] -- looking for PCL_OUTOFCORE
+[8.416s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[8.416s] -- looking for PCL_PEOPLE
+[8.418s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[8.419s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/home/jetson/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[8.601s] -- Configuring done
+[8.724s] -- Generating done
+[8.750s] -- Build files have been written to: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2
+[8.806s] Invoked command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2
+[8.811s] Invoking command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake --build /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2 -- -j6 -l6
+[8.959s] [ 50%] [32mBuilding CXX object CMakeFiles/rgbd_node.dir/src/rgbd_node.cpp.o[0m
+[21.355s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[21.355s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[21.355s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[21.355s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[21.356s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.356s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.356s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[21.356s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[21.357s]       |                                                                          [01;35m[K^~~~~~~~~~[m[K
+[21.357s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[21.357s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[21.357s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[21.357s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[21.358s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[21.358s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[21.358s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[21.358s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[21.358s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.359s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.359s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[21.359s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[21.359s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[21.373s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[21.373s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[21.373s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[21.373s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[21.373s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.373s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.373s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[21.374s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[21.374s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[21.374s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[21.374s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[21.374s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[21.374s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[21.374s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[21.374s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[21.374s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[21.374s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.375s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[21.375s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[21.375s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[21.375s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.375s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.376s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[21.376s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[21.376s]       |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+[21.376s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[21.377s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[21.377s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[21.377s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[21.377s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[21.377s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[21.378s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[21.378s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[21.378s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[21.378s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[21.378s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[21.378s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[21.378s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.144s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[22.144s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.145s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.145s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.145s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.145s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.146s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[22.146s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[22.146s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.146s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[22.147s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.147s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.147s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.147s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.147s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.148s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.148s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.148s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.148s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.149s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.149s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.149s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.149s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.149s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.182s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[22.182s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.182s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.183s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.183s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.183s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.183s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[22.183s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[22.183s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.183s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[22.183s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.183s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.184s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.184s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.184s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.184s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.184s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.184s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.184s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.184s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.184s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.185s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.185s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.185s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.358s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[22.359s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.359s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.359s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.360s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.360s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.360s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[22.360s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:80:35:[m[K   required from here
+[22.361s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.361s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[22.361s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.361s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.361s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.362s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.362s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.362s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.362s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.362s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.363s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.363s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.363s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.363s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.363s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.364s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.387s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[22.387s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.388s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.388s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.388s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.388s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.389s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.389s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[22.389s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.389s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.389s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.390s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.390s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.390s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.390s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.390s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.391s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.391s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.391s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.391s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.392s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.392s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.509s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[22.510s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.510s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.510s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.511s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.511s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.511s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[22.511s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:112:41:[m[K   required from here
+[22.511s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.512s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[22.512s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.512s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.512s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.513s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.513s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.513s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.513s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.513s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.514s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.514s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.514s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.514s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.514s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.515s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[22.515s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[22.515s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[22.515s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[22.515s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[22.516s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.516s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.516s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[22.516s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[22.517s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[22.517s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[22.517s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[22.517s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[22.517s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[22.518s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[22.518s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[22.518s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[22.518s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[22.518s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[22.519s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[22.519s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[22.519s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[22.519s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[24.096s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:34[m[K,
+[24.096s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[24.096s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[24.096s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[24.096s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.096s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.096s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[24.097s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[24.097s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.097s]    62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+[24.097s]       |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[24.097s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[24.097s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[24.097s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[24.097s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[24.097s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[24.097s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[24.098s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[24.098s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[24.098s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.098s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.098s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.098s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[24.099s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[24.166s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[24.166s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[24.167s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[24.167s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[24.167s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.167s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.168s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[24.168s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[24.168s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.168s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[24.169s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[24.169s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[24.169s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[24.169s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[24.169s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[24.170s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[24.170s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[24.170s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[24.170s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[24.170s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.171s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.171s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.171s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[24.171s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[24.171s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[24.172s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[24.172s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[24.172s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[24.172s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.173s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.173s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.173s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[24.173s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[24.174s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[24.174s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[24.174s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[24.174s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[24.174s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[24.175s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[24.175s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[24.175s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[24.175s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.175s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.176s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.176s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[24.176s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[24.257s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[24.257s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[24.257s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[24.258s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[24.258s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.258s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.258s] /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[24.259s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[24.259s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.259s]    59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+[24.259s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[24.260s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[24.260s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[24.260s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[24.260s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[24.260s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[24.261s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[24.261s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[24.261s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[24.261s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.261s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.262s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.262s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[24.262s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[24.287s] In file included from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:35[m[K,
+[24.287s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LoopClosing.h:34[m[K,
+[24.288s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/LocalMapping.h:26[m[K,
+[24.288s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:31[m[K,
+[24.288s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.288s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.288s] [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[24.288s]    60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+[24.288s]       |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+[24.288s] In file included from [01m[K/usr/local/include/eigen3/Eigen/Core:161[m[K,
+[24.288s]                  from [01m[K/usr/local/include/pangolin/display/opengl_render_state.h:40[m[K,
+[24.289s]                  from [01m[K/usr/local/include/pangolin/display/viewport.h:31[m[K,
+[24.289s]                  from [01m[K/usr/local/include/pangolin/gl/gl.h:30[m[K,
+[24.289s]                  from [01m[K/usr/local/include/pangolin/pangolin.h:33[m[K,
+[24.289s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/MapDrawer.h:27[m[K,
+[24.289s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Viewer.h:26[m[K,
+[24.290s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/Tracking.h:28[m[K,
+[24.290s]                  from [01m[K/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/include/System.h:29[m[K,
+[24.290s]                  from [01m[K/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/src/rgbd_node.cpp:19[m[K:
+[24.290s] [01m[K/usr/local/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+[24.290s]   167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+[24.291s]       |                                     [01;36m[K^~~~~~~~~~[m[K
+[69.134s] [100%] [32m[1mLinking CXX executable rgbd_node[0m
+[70.322s] /usr/bin/ld: warning: libopencv_core.so.3.2, needed by /home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/Thirdparty/DBoW2/lib/libDBoW2.so, may conflict with libopencv_core.so.410
+[71.307s] [100%] Built target rgbd_node
+[71.345s] Invoked command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake --build /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2 -- -j6 -l6
+[71.380s] Invoking command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake --install /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2
+[71.405s] -- Install configuration: "Release"
+[71.406s] -- Execute custom install script
+[71.407s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/lib/orbslam2_pointcloud_ros2/rgbd_node
+[71.438s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/lib/orbslam2_pointcloud_ros2/orbbec_aligned_rgbd_publisher.py
+[71.459s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/config/femto_mega.yaml
+[71.481s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/config/femto_mega_aligned.yaml
+[71.502s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/launch/femto_mega_camera_and_slam.launch.py
+[71.521s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/launch/orbbec_aligned_rgbd_publisher.launch.py
+[71.541s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/launch/rgbd_femto_mega.launch.py
+[71.565s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/ament_index/resource_index/package_run_dependencies/orbslam2_pointcloud_ros2
+[71.586s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/ament_index/resource_index/parent_prefix_path/orbslam2_pointcloud_ros2
+[71.606s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/environment/ament_prefix_path.sh
+[71.628s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/environment/ament_prefix_path.dsv
+[71.649s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/environment/path.sh
+[71.676s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/environment/path.dsv
+[71.698s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/local_setup.bash
+[71.719s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/local_setup.sh
+[71.743s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/local_setup.zsh
+[71.764s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/local_setup.dsv
+[71.791s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/package.dsv
+[71.822s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/ament_index/resource_index/packages/orbslam2_pointcloud_ros2
+[71.846s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/cmake/orbslam2_pointcloud_ros2Config.cmake
+[71.871s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/cmake/orbslam2_pointcloud_ros2Config-version.cmake
+[71.893s] -- Symlinking: /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/package.xml
+[71.919s] Invoked command in '/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/home/jetson/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/humble /usr/bin/cmake --install /home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/build/orbslam2_pointcloud_ros2

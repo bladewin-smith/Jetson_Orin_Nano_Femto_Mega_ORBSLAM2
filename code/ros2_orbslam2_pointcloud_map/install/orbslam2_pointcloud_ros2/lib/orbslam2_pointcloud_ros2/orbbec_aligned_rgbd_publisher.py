@@ -1,0 +1,1 @@
+/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/src/orbslam2_pointcloud_ros2/scripts/orbbec_aligned_rgbd_publisher.py

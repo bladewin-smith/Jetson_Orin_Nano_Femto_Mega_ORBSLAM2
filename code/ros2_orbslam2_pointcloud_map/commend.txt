@@ -1,0 +1,13 @@
+
+ros2 launch orbslam2_pointcloud_ros2 orbbec_aligned_rgbd_publisher.launch.py
+
+export ORB_SLAM2_ROOT=/home/jetson/ws/orb-slam2/code/main/ORBSLAM2_with_pointcloudmap_AstraPro-main/ORBSLAM2_with_pointcloud_map/
+
+
+
+ros2 launch orbslam2_pointcloud_ros2 rgbd_femto_mega.launch.py   vocabulary_path:=$ORB_SLAM2_ROOT/Vocabulary/ORBvoc.bin   settings_path:=/home/jetson/ws/orb-slam2/code/ros2_orbslam2_pointcloud_map/install/orbslam2_pointcloud_ros2/share/orbslam2_pointcloud_ros2/config/femto_mega_aligned.yaml   output_dir:=/home/jetson/ws/orb-slam2/results   enable_viewer:=false
+
+
+ros2 topic pub --once /RGBD/cmd std_msgs/msg/String "{data: stop}"
+
+
